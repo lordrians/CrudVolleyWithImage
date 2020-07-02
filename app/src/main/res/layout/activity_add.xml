@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/constrain_start"
+    android:layout_marginEnd="@dimen/constrain_end"
+    tools:context=".AddActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/title_activity"
+                android:textColor="@color/black"
+                android:text="@string/tambah_barang"
+                android:layout_marginTop="@dimen/constaint_top"
+                android:layout_marginBottom="@dimen/constrain_bot"
+                android:textAllCaps="true"/>
+
+            <ImageView
+                android:id="@+id/iv_photo_add"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@color/grey"/>
+
+            <EditText
+                android:id="@+id/et_nama_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/constaint_top"
+                android:textSize="@dimen/content"
+                android:textColor="@color/black"
+                android:hint="@string/nama_barangg"/>
+            <EditText
+                android:id="@+id/et_harga_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/constaint_top"
+                android:textSize="@dimen/content"
+                android:textColor="@color/black"
+                android:hint="@string/harga"/>
+            <EditText
+                android:id="@+id/et_stok_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/constaint_top"
+                android:textSize="@dimen/content"
+                android:textColor="@color/black"
+                android:hint="@string/stok"/>
+
+            <Button
+                android:id="@+id/btn_simpan_add"
+                android:layout_marginTop="@dimen/top_margin_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/content"
+                android:text="@string/Simpan"
+                android:background="@drawable/selector_btn"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

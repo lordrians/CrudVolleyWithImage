@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_item">150dp</dimen>
+    <dimen name="constrain_end">16dp</dimen>
+    <dimen name="content">16sp</dimen>
+    <dimen name="container_padding">16dp</dimen>
+    <dimen name="constrain_start">16dp</dimen>
+    <dimen name="top_margin_item">8dp</dimen>
+    <dimen name="bot_margin_item">8dp</dimen>
+    <dimen name="elevation_item">5dp</dimen>
+    <dimen name="constaint_top">16dp</dimen>
+    <dimen name="top_margin_button">24dp</dimen>
+    <dimen name="title_activity">28sp</dimen>
+    <dimen name="constrain_bot">16dp</dimen>
+</resources>

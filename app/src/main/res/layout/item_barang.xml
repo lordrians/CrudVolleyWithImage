@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_layout_barang"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_item"
+    android:padding="@dimen/container_padding"
+    android:layout_marginStart="@dimen/constrain_start"
+    android:layout_marginEnd="@dimen/constrain_end"
+    android:layout_marginTop="@dimen/top_margin_item"
+    android:layout_marginBottom="@dimen/bot_margin_item"
+    android:elevation="@dimen/elevation_item"
+    android:background="@drawable/selector_item">
+
+    <ImageView
+        android:id="@+id/iv_item_photo"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/constrain_end"
+        tools:src="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/content"
+                    android:textColor="@color/black"
+                    android:layout_column="1"
+                    android:text="@string/nama"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/content"
+                    android:textColor="@color/black"
+                    android:layout_column="2"
+                    android:text="@string/titik_dua"/>
+
+                <TextView
+                    android:id="@+id/tv_item_nama"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/content"
+                    android:textColor="@color/black"
+                    android:layout_column="3"
+                    android:maxLines="2"
+                    android:text="@string/nama_barang"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/content"
+                    android:textColor="@color/black"
+                    android:layout_column="1"
+                    android:text="@string/harga"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/content"
+                    android:textColor="@color/black"
+                    android:layout_column="2"
+                    android:text="@string/titik_dua"/>
+
+                <TextView
+                    android:id="@+id/tv_item_harga"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/content"
+                    android:textColor="@color/black"
+                    android:layout_column="3"
+                    android:text="@string/harga_barang"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/content"
+                    android:textColor="@color/black"
+                    android:layout_column="1"
+                    android:text="@string/stok"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/content"
+                    android:textColor="@color/black"
+                    android:layout_column="2"
+                    android:text="@string/titik_dua"/>
+
+                <TextView
+                    android:id="@+id/tv_item_stok"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/content"
+                    android:textColor="@color/black"
+                    android:layout_column="3"
+                    android:text="@string/stok_barang"/>
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
