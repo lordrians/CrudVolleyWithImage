@@ -1,4 +1,4 @@
-package com.example.crudvolley;
+package com.example.crudvolley.activity;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,20 +11,20 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Base64;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.crudvolley.R;
+import com.example.crudvolley.object.Barang;
+import com.example.crudvolley.object.Variable;
 import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -118,10 +118,6 @@ public class AddActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Berhasil menambahkan", Toast.LENGTH_SHORT).show();
                     finish();
                 }
-//                JSONObject object = barangArr.getJSONObject(i);
-
-
-
 
             } catch (JSONException e) {
                 e.printStackTrace();

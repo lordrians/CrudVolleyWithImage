@@ -1,4 +1,4 @@
-package com.example.crudvolley;
+package com.example.crudvolley.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,9 +11,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.android.volley.Request;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.crudvolley.BarangAdapter;
+import com.example.crudvolley.R;
+import com.example.crudvolley.object.Barang;
+import com.example.crudvolley.object.Variable;
 
 import org.json.JSONArray;
 import org.json.JSONException;

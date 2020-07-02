@@ -1,8 +1,8 @@
 package com.example.crudvolley;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -15,11 +15,15 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.example.crudvolley.activity.EditActivity;
+import com.example.crudvolley.activity.MainActivity;
+import com.example.crudvolley.object.Barang;
+import com.example.crudvolley.object.Variable;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -68,6 +72,9 @@ public class BarangAdapter extends RecyclerView.Adapter<BarangAdapter.ViewHolder
                         Toast.makeText(mContext,"Delete",Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.menu_edit:
+                        Intent intent = new Intent(mContext, EditActivity.class);
+
+                        sendData(barang, position);
                         Toast.makeText(mContext,"Edit",Toast.LENGTH_SHORT).show();
                         break;
                 }
@@ -75,6 +82,15 @@ public class BarangAdapter extends RecyclerView.Adapter<BarangAdapter.ViewHolder
             });
             popupMenu.show();
         });
+
+    }
+
+    private void sendData(Barang barang, int position) {
+        Intent intent = new Intent(mContext, EditActivity.class);
+        barang.setPosition(position);
+        intent.putExtra("barang",barang);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        mContext.startActivity(intent);
 
     }
 

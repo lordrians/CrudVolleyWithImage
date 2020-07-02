@@ -1,4 +1,4 @@
-package com.example.crudvolley;
+package com.example.crudvolley.object;
 
 import android.os.Parcel;
 import android.os.Parcelable;

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_marginStart="@dimen/constrain_start"
     android:layout_marginEnd="@dimen/constrain_end"
-    tools:context=".EditActivity">
+    tools:context=".activity.EditActivity">
 
     <ScrollView
         android:layout_width="0dp"

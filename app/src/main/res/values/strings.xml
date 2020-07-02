@@ -16,4 +16,19 @@
     <string name="Simpan">Simpan</string>
     <string name="edit_barang">Edit Barang</string>
     <string name="tambah_barang">Tambah barang</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in">Sign In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="user_login">User Login</string>
+    <string name="user_register">User Register</string>
+    <string name="name">Name</string>
+    <string name="register">Register</string>
+    <string name="have_an_account">Have an account?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>

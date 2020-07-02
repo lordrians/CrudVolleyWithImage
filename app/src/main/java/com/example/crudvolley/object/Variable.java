@@ -1,4 +1,4 @@
-package com.example.crudvolley;
+package com.example.crudvolley.object;
 
 public class Variable {
 

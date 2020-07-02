@@ -9,7 +9,11 @@
     <dimen name="bot_margin_item">8dp</dimen>
     <dimen name="elevation_item">5dp</dimen>
     <dimen name="constaint_top">16dp</dimen>
-    <dimen name="top_margin_button">24dp</dimen>
+    <dimen name="top_margin_button">32dp</dimen>
     <dimen name="title_activity">28sp</dimen>
     <dimen name="constrain_bot">16dp</dimen>
+    <dimen name="auth_title">32sp</dimen>
+    <dimen name="top_margin_auth">32dp</dimen>
+    <dimen name="top_margin_hint">12dp</dimen>
+    <dimen name="small_content">14sp</dimen>
 </resources>
