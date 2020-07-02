@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -31,13 +32,14 @@ public class MainActivity extends AppCompatActivity {
     public static RecyclerView rvBarang;
     public static ArrayList<Barang> barangArrayList;
     private BarangAdapter barangAdapter;
+    private SharedPreferences UserInfo;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        UserInfo = getSharedPreferences(Variable.SP_USER_FILE,0);
         handlerAuth();
         init();
 
@@ -47,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         Handler handler = new Handler();
         handler.postAtTime(() -> {
 
-            SharedPreferences UserInfo = getSharedPreferences(Variable.SP_USER_FILE,0);
+
             boolean isLoggedIn = UserInfo.getBoolean(Variable.IS_LOGGED, false);
 
             if (!isLoggedIn){
@@ -59,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init() {
+        String nama_user = UserInfo.getString(Variable.NAMA_USER,"");
+        getSupportActionBar().setTitle(nama_user);
         barangArrayList = new ArrayList<>();
         rvBarang = findViewById(R.id.rv_barang);
         rvBarang.setHasFixedSize(true);
@@ -109,13 +113,23 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             case R.id.option_menu_logout:
-                Toast.makeText(getApplicationContext(),"Logout", Toast.LENGTH_SHORT).show();
+                logout();
                 return true;
 
             default:
                 return super.onOptionsItemSelected(item);
 
         }
+
+    }
+
+    private void logout() {
+        SharedPreferences.Editor editor = UserInfo.edit();
+        editor.putBoolean(Variable.IS_LOGGED,false);
+        editor.putString(Variable.NAMA_USER, null);
+        editor.apply();
+        startActivity(new Intent(getApplicationContext(), AuthActivity.class));
+        finish();
 
     }
 }

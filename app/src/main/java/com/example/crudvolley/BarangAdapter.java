@@ -62,20 +62,15 @@ public class BarangAdapter extends RecyclerView.Adapter<BarangAdapter.ViewHolder
                 .into(holder.ivPhoto);
 
         holder.itemLayout.setOnClickListener(v -> {
-            Toast.makeText(mContext,"Delete",Toast.LENGTH_SHORT).show();
             PopupMenu popupMenu = new PopupMenu(mContext, holder.tvStok);
             popupMenu.inflate(R.menu.item_menu);
             popupMenu.setOnMenuItemClickListener(item -> {
                 switch (item.getItemId()){
                     case R.id.menu_hapus:
                         deleteItem(barang.getId(),position, barang.getPhoto() );
-                        Toast.makeText(mContext,"Delete",Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.menu_edit:
-                        Intent intent = new Intent(mContext, EditActivity.class);
-
                         sendData(barang, position);
-                        Toast.makeText(mContext,"Edit",Toast.LENGTH_SHORT).show();
                         break;
                 }
                 return false;
@@ -95,8 +90,6 @@ public class BarangAdapter extends RecyclerView.Adapter<BarangAdapter.ViewHolder
     }
 
     private void deleteItem(int id,int position, String photo) {
-//        Toast.makeText(mContext,String.valueOf(position),Toast.LENGTH_SHORT).show();
-//        Toast.makeText(mContext,String.valueOf(id),Toast.LENGTH_SHORT).show();
         StringRequest request = new StringRequest(StringRequest.Method.POST, Variable.DELETE_ITEM, response -> {
             MainActivity.barangArrayList.remove(position);
             MainActivity.rvBarang.getAdapter().notifyItemRemoved(position);

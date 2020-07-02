@@ -9,6 +9,7 @@ public class Variable {
     public static final String UPDATE_ITEM = BASE + "update_item.php";
     public static final String DELETE_ITEM = BASE + "delete_item.php";
     public static final String LOGIN = BASE + "login.php";
+    public static final String REGISTER = BASE + "register.php";
 
 
     public static final String SP_USER_FILE = "SP_USER_FILE";
