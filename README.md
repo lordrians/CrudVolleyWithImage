@@ -29,7 +29,7 @@ User can be add new item, update and delete item.
 
 User can login or register new account, after that user will send to home
 
-![Login](/app/ss/ss_login.png)  ![Register](/app/ss/ss_register.png) 
+<img src="/app/ss/ss_login.png" width="250" height="400"> <img src="/app/ss/ss_register.png" width="250" height="400">
 
 <-------------------------------------------------------------------------------------------------------------------------------------------------------------->
   
@@ -38,7 +38,7 @@ User can login or register new account, after that user will send to home
 In this section i will give you example to add new item. User must press option menu and select "Tambah Barang".
 After that user will send to Add New Item Activity. After user filling field in this acitivity, and press submit button user will move to home
 
-![AddItem](/app/ss/ss_add.png)  ![Home](/app/ss/ss_home.png) 
+<img src="/app/ss/ss_add.png" width="250" height="400"> <img src="/app/ss/ss_home.png" width="250" height="400">
  
 <-------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -50,6 +50,4 @@ After that user will send to edit activity, then user filling field in this acti
 After press that button user will send to home and the item has been edited.
 If you will delete item, just press one item you wan't to delete and press "Hapus" in pop Menu.
 
-
-![Update](/app/ss/ss_edit.png)  ![HomeEdit](/app/ss/ss_home_edit.png)  ![HomeDelete](/app/ss/ss_home_delete.png)
-
+<img src="/app/ss/ss_edit.png" width="250" height="400"> <img src="/app/ss/ss_home_edit.png" width="250" height="400"> <img src="/app/ss/ss_home_delete.png" width="250" height="400">
