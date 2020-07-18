@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -64,6 +65,7 @@ public class SignInFragment extends Fragment {
     }
 
     private void login() {
+        Toast.makeText(getContext(), "Test", Toast.LENGTH_LONG).show();
         StringRequest request = new StringRequest(StringRequest.Method.POST, Variable.LOGIN, response -> {
             try {
                 JSONObject object = new JSONObject(response);

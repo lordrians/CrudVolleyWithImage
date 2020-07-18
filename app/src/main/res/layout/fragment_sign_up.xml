@@ -61,6 +61,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/constaint_top"
                     android:textSize="@dimen/content"
+                    android:inputType="textPassword"
                     android:textColor="@color/black"
                     android:hint="@string/password"/>
 

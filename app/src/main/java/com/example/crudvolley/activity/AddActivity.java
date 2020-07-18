@@ -102,10 +102,10 @@ public class AddActivity extends AppCompatActivity {
         StringRequest request = new StringRequest(StringRequest.Method.POST, Variable.INSERT_ITEM, response -> {
 
             try {
-                JSONObject barangArr = new JSONObject(response);
+                JSONObject object = new JSONObject(response);
 
-                if (barangArr.getBoolean("success")){
-                    JSONObject objBarang = barangArr.getJSONObject("data");
+                if (object.getBoolean("success")){
+                    JSONObject objBarang = object.getJSONObject("data");
                     Barang barang = new Barang();
                     barang.setId(objBarang.getInt("id"));
                     barang.setNama(objBarang.getString("nama"));
