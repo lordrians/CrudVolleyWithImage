@@ -27,8 +27,7 @@ Technology i have used in this app :
   
 [Screenshoot Login & Registration]
 User can login or register new account, after that user will send to home
-
-![Sign In](https://drive.google.com/uc?export=view&id=1K2-KgfacVUOb6f1iRFWOT39ZvSW9-UJH)  
+![Sign In](https://github.com/lordrians/CrudVolleyWithImage/tree/master/app/ss/Screenshot from 2020-07-19 00-49-42.png?raw=true)  
 ![Register](https://drive.google.com/uc?export=view&id=1Y-xzPtPvlWrddSlPDm12k4nWzp2GL20Y) 
 ![Home](https://drive.google.com/uc?export=view&id=1Fe8pQnwU2gpo8TgcdgIDK2wLz_27D2pu)
   
