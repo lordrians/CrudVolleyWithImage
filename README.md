@@ -40,6 +40,8 @@ After that user will send to Add New Item Activity. After user filling field in 
 
 ![AddItem](/app/ss/ss_add.png)  ![Home](/app/ss/ss_home.png) 
  
+<-------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
 #### [Screenshoot Update Item & Delete Item]
 
 In this section i will give you example to Update item and delete it.
