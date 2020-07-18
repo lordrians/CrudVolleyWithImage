@@ -28,7 +28,7 @@ Technology i have used in this app :
 [Screenshoot Login & Registration]
 User can login or register new account, after that user will send to home
 
-![](/app/ss/ss_login.png)  ![](/app/ss/ss_register.png) 
+![Login](/app/ss/ss_login.png)  ![Register](/app/ss/ss_register.png) 
 
 ![Register](https://drive.google.com/uc?export=view&id=1Y-xzPtPvlWrddSlPDm12k4nWzp2GL20Y) 
 ![Home](https://drive.google.com/uc?export=view&id=1Fe8pQnwU2gpo8TgcdgIDK2wLz_27D2pu)
