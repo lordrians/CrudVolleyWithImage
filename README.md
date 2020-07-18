@@ -6,14 +6,14 @@ I create simple app with database mysql and use volley for request to server in 
 User can login and register account, after that user can see many item have been posting.
 User can be add new item, update and delete item.
 
-Feature :
+### Feature :
   * Login Account
   * Register Account
   * Add New Item
   * Delete Item
   * Update Item
 
-Technology i have used in this app :
+### Technology i have used in this app :
   1.  Recycler View
   2.  Scroll View
   3.  Intent
@@ -25,7 +25,7 @@ Technology i have used in this app :
   10. Server Xampp in localhost
   
   
-[Screenshoot Login & Registration]
+#### [Screenshoot Login & Registration]
 
 User can login or register new account, after that user will send to home
 
