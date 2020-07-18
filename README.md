@@ -31,7 +31,7 @@ User can login or register new account, after that user will send to home
 
 ![Login](/app/ss/ss_login.png)  ![Register](/app/ss/ss_register.png) 
 
-<-------------------------------------------------------------------------------------------->
+<-------------------------------------------------------------------------------------------------------------------------------------------------------------->
   
 [Screenshoot Add Item & Home]
 
