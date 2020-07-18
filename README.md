@@ -26,14 +26,16 @@ Technology i have used in this app :
   
   
 [Screenshoot Login & Registration]
-User can login or register new account, after that user will send to home
 
+User can login or register new account, after that user will send to home
 ![Login](/app/ss/ss_login.png)  ![Register](/app/ss/ss_register.png) 
   
 [Screenshoot Add Item & Home]
+
 In this section i will give you example to add new item. User must press option menu and select "Tambah Barang".
 After that user will send to Add New Item Activity. After user filling field in this acitivity, and press submit button user will move to home
 
+![AddItem](/app/ss/ss_add.png)  ![Home](/app/ss/ss_home.png) 
 ![Add New Item](https://drive.google.com/uc?export=view&id=1vxE65js2BsjI3ECcRmVc2oFJ6obT2PzI)  
 ![Home After Add](https://drive.google.com/uc?export=view&id=1QTC2_2-RtT7EaXNeGRTiDocoI8-jqktE)
  
