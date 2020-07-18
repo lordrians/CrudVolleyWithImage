@@ -29,9 +29,6 @@ Technology i have used in this app :
 User can login or register new account, after that user will send to home
 
 ![Login](/app/ss/ss_login.png)  ![Register](/app/ss/ss_register.png) 
-
-![Register](https://drive.google.com/uc?export=view&id=1Y-xzPtPvlWrddSlPDm12k4nWzp2GL20Y) 
-![Home](https://drive.google.com/uc?export=view&id=1Fe8pQnwU2gpo8TgcdgIDK2wLz_27D2pu)
   
 [Screenshoot Add Item & Home]
 In this section i will give you example to add new item. User must press option menu and select "Tambah Barang".
