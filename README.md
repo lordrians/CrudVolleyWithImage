@@ -33,20 +33,21 @@ User can login or register new account, after that user will send to home
 
 <-------------------------------------------------------------------------------------------------------------------------------------------------------------->
   
-[Screenshoot Add Item & Home]
+#### [Screenshoot Add Item & Home]
 
 In this section i will give you example to add new item. User must press option menu and select "Tambah Barang".
 After that user will send to Add New Item Activity. After user filling field in this acitivity, and press submit button user will move to home
 
 ![AddItem](/app/ss/ss_add.png)  ![Home](/app/ss/ss_home.png) 
  
-[Screenshoot Update Item & Delete Item]
+#### [Screenshoot Update Item & Delete Item]
+
 In this section i will give you example to Update item and delete it.
 First you press item you have choosed, and will be show pop menu and choose Edit.
 After that user will send to edit activity, then user filling field in this activity and press button "SIMPAN".
 After press that button user will send to home and the item has been edited.
 If you will delete item, just press one item you wan't to delete and press "Hapus" in pop Menu.
 
-![Update Item](https://drive.google.com/uc?export=view&id=1rNyG0R4sWY5p2hhq5X03rDDVH28UV1Pu)  
-![Home After Update](https://drive.google.com/uc?export=view&id=1CX8qJjKBPoBVz8Ma1FTdELwfijQUiXBm) 
-![Home After Delete](https://drive.google.com/uc?export=view&id=1bSYX4Sl3XFDUdp6sD29japL2iRDt14my)
+
+![Update](/app/ss/ss_edit.png)  ![HomeEdit](/app/ss/ss_home_edit.png)  ![HomeDelete](/app/ss/ss_home_delete.png)
+
