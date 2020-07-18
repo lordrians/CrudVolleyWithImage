@@ -27,9 +27,9 @@ Technology i have used in this app :
   
 [Screenshoot Login & Registration]
 User can login or register new account, after that user will send to home
-![Sign In](https://github.com/lordrians/CrudVolleyWithImage/tree/master/app/ss/ss_login.png?raw=true) 
+![Alt text](/relative/path/to/ss_login.png?raw=true "Title") 
 
-![Sign s](https://github.com/lordrians/CrudVolleyWithImage/tree/master/app/ss/ss_login.png?raw=false) 
+![Alt text](https://github.com/lordrians/CrudVolleyWithImage/tree/master/app/ss/ss_login.png?raw=true) 
 
 ![Register](https://drive.google.com/uc?export=view&id=1Y-xzPtPvlWrddSlPDm12k4nWzp2GL20Y) 
 ![Home](https://drive.google.com/uc?export=view&id=1Fe8pQnwU2gpo8TgcdgIDK2wLz_27D2pu)
