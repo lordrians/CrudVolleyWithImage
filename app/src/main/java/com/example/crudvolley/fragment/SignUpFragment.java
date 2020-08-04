@@ -1,5 +1,6 @@
 package com.example.crudvolley.fragment;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -32,6 +33,7 @@ public class SignUpFragment extends Fragment {
     private Button btnRegister;
     private TextView btnSignIn;
     private View view;
+    private ProgressDialog dialog;
 
 
     @Override
@@ -51,6 +53,9 @@ public class SignUpFragment extends Fragment {
         btnRegister = view.findViewById(R.id.btn_register_signup);
         btnSignIn = view.findViewById(R.id.tv_btn_signin_signup);
 
+        dialog = new ProgressDialog(getContext());
+        dialog.setCancelable(false);
+
         btnSignIn.setOnClickListener(v -> {
             getActivity()
                     .getSupportFragmentManager()
@@ -66,6 +71,8 @@ public class SignUpFragment extends Fragment {
     }
 
     private void register() {
+        dialog.setMessage("Sign Up...");
+        dialog.show();
         StringRequest request = new StringRequest(StringRequest.Method.POST, Variable.REGISTER, response -> {
             try {
                 JSONObject object = new JSONObject(response);
@@ -79,11 +86,14 @@ public class SignUpFragment extends Fragment {
                     startActivity(new Intent(getActivity(), MainActivity.class));
                     getActivity().finish();
                 }
+                dialog.dismiss();
             } catch (JSONException e) {
                 e.printStackTrace();
+                dialog.dismiss();
             }
         },error -> {
             error.printStackTrace();
+            dialog.dismiss();
         }){
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {

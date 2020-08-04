@@ -49,7 +49,8 @@ public class EditActivity extends AppCompatActivity {
         init();
 
     }
-
+//&jlt_O2yJ!H(1mnC
+//            id14518997_db_uas
     private void init() {
         ivPhoto = findViewById(R.id.iv_photo_edit);
         etNama = findViewById(R.id.et_nama_edit);
@@ -63,7 +64,6 @@ public class EditActivity extends AppCompatActivity {
         etStok.setText(String.valueOf(paketBarang.getStok()));
         idBarang = paketBarang.getId();
         index = paketBarang.getPosition();
-        Toast.makeText(getApplicationContext(),paketBarang.getPhoto(),Toast.LENGTH_SHORT).show();
         Glide.with(getApplicationContext())
                 .load(Variable.BASE + "img/" + paketBarang.getPhoto())
                 .apply(new RequestOptions().centerCrop())

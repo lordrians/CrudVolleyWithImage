@@ -15,6 +15,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.android.volley.NetworkResponse;
+import com.android.volley.Request;
+import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.crudvolley.BarangAdapter;
@@ -73,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadBarang() {
-        StringRequest request = new StringRequest(StringRequest.Method.GET, Variable.SHOW_ITEM, response -> {
+        StringRequest request = new StringRequest(StringRequest.Method.POST, Variable.SHOW_ITEM, response -> {
             try {
                 JSONArray barangArr = new JSONArray(response);
 
@@ -93,8 +96,41 @@ public class MainActivity extends AppCompatActivity {
 
             } catch (JSONException e) {
                 e.printStackTrace();
+                Toast.makeText(this, "B", Toast.LENGTH_SHORT).show();
             }
-        }, Throwable::printStackTrace);
+
+        }, error -> {
+            error.printStackTrace();
+            Toast.makeText(this, "C", Toast.LENGTH_SHORT).show();
+        }){
+            @Override
+            protected Response<String> parseNetworkResponse(NetworkResponse response) {
+                if (response.statusCode == 200){
+                    JSONArray barangArr = null;
+                    try {
+                        barangArr = new JSONArray(response);
+                        for (int i = 0; i < barangArr.length(); i++){
+                            JSONObject object = barangArr.getJSONObject(i);
+
+                            Barang barang = new Barang();
+                            barang.setId(object.getInt("id"));
+                            barang.setNama(object.getString("nama"));
+                            barang.setHarga(object.getInt("harga"));
+                            barang.setStok(object.getInt("stok"));
+                            barang.setPhoto(object.getString("photo"));
+                            barangArrayList.add(barang);
+                        }
+                        barangAdapter = new BarangAdapter(getApplicationContext(), barangArrayList);
+                        rvBarang.setAdapter(barangAdapter);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+                return super.parseNetworkResponse(response);
+            }
+        };
+
         Volley.newRequestQueue(getApplicationContext()).add(request);
     }
 

@@ -33,10 +33,10 @@
                     android:textAllCaps="true"/>
 
                 <ImageView
-                    android:layout_width="150dp"
+                    android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/ic_logo_shop"/>
+                    android:src="@drawable/fifstore_logo"/>
 
                 <EditText
                     android:id="@+id/et_name_signup"

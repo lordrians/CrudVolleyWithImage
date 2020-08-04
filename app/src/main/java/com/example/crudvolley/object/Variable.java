@@ -2,7 +2,7 @@ package com.example.crudvolley.object;
 
 public class Variable {
 
-    public static final String BASE = "http://192.168.1.15/api_uas/";
+    public static final String BASE = "https://unconquered-clearan.000webhostapp.com/api_uas/";
 
     public static final String SHOW_ITEM = BASE + "show_item.php";
     public static final String INSERT_ITEM = BASE + "insert_item.php";

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CRUD Volley</string>
+    <string name="app_name">FifStore</string>
     <string name="nama">Nama</string>
     <string name="titik_dua">: </string>
     <string name="nama_barang">Asus ROG intel CASDASDASDASDASDASDASore i7</string>
@@ -31,4 +31,5 @@
     <string name="have_an_account">Have an account?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="ubah_data">Ubah Data</string>
 </resources>
